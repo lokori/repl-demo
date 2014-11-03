@@ -7,6 +7,10 @@ Koodi perustuu Opetushallituksen Aitu-projektin todelliseen konversioon. Esimerk
 Oracle-tietokannan sijaan käytetään PostgreSQL-kantaa myös lähdejärjestelmän tietokantana. Dataa ja kannan rakennetta on myös
 yksinkertaistettu huomattavasti. 
 
+Demokoodissa on jäljellä demon kannalta epäolennaisia koodinpätkiä jonkin verran. Tämä on osittain tahallista. Kyse on REPL:n 
+käytön ja Clojuren dynaamisen tyypityksen avulla saatavan tehokkaan työtavan demonstraatiosta, ei toteutuskoodin demonstraatiosta
+tai konversiomoottorin demonstraatiosta.
+
 # Konversiomoottori
 
 * Konversio on kaksiosainen: yleiskäyttöinen "moottori" ja sovelluskohtaiset konversiosäännöt. 
