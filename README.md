@@ -19,3 +19,15 @@ yksinkertaistettu huomattavasti.
 * Säännöt/logiikka voidaan kirjoittaa Clojure-koodina.
 * Testidata saadaan copy-pastella REPL:sta.
 
+# Komentoja virtuaalikoneen hallintaan
+
+## Tietokannan dumppaus
+```
+[root@localhost dumps]# pg_dump --clean -U repl_adm  -h localhost -p 5432 sourcedb > sourcedb.dmp
+```
+
+## Dumpin lataus
+```
+psql -U repl_adm -h localhost -d sourcedb -f sourcedb.dmp 
+```
+
