@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eu
 
-if [ $# -ne 2 ]
+if [ $# -ne 1 ]
 then
     echo "$0 <sovelluspalvelimen-ip>"
     exit 1
