@@ -18,12 +18,11 @@
            [clojure.java.jdbc :as jdbc]
            [clojure.java.jdbc.sql :as s]
            [clojure.tools.logging :as log])
- (:use ttkr-konversio.aitu-konversio))
+ (:use repl-konversio.konversiodemo))
 
 (defmacro with-targetdb
   [& body]
-  `(jdbc/with-connection jdbcurl-target
-     (jdbc/do-commands "set session aitu.kayttaja = 'KONVERSIO'")
+  `(jdbc/with-connection jdbcurl-target     
      ~@body))
 
 (defmacro with-inputdb
@@ -119,12 +118,11 @@
 
 (defn konvertoi-kaikki!
   []
-  (without-triggers [:tutkintotoimikunta :jarjestamissopimus]
-    #(with-targetdb
-      (tyhjenna! (reverse taulut))
-      (println "tyhjennys ok")
-      (time (konvertoi-e2e! println "19103107" taulut konvertoi!))
-      (println "konversio valmis!"))))
+  (with-targetdb
+   (tyhjenna! (reverse taulut))
+   (println "tyhjennys ok")
+   (time (konvertoi-e2e! println "19103107" taulut konvertoi!))
+   (println "konversio valmis!")))
 
 (defn -main []
   (konvertoi-kaikki!))

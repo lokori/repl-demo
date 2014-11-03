@@ -1,5 +1,5 @@
-(ns ttkr-konversio.konversiodemo
-  "Demo tiimipalaveria varten. Konvertoidaanpa keskusjärjestö tietomalliin!"
+(ns repl-konversio.konversiodemo
+  "Demo Korkeakoulujen IT-päiviä varten. Konvertoidaanpa keskusjärjestö tietomalliin!"
    (:require [clojure.java.jdbc :as jdbc]))
 
 (def conf (binding [*read-eval* false]
@@ -17,14 +17,14 @@
   "generoidaan halutulla rajauksella input-selectit. YYYYDDMM, esim. 20073107"
   [toimikausialku]
   {
-   :keskusjarjesto "select * from ..."
+   :keskusjarjesto "select * from ... "
 })
 
 (def kanta-mappays
   {:keskusjarjesto 
-     {:nimi xx
-      :keskusjarjestoid xx
-      :postitoimipaikka xx
+     {:nimi :x
+      :keskusjarjestoid :x
+      :postitoimipaikka :x
       }
    })
 

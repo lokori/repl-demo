@@ -19,7 +19,7 @@
             [clojure.set])
   (:use clojure.test
         repl-konversio.core
-        repl-konversio.aitu-konversio))
+        repl-konversio.konversiodemo))
 
 
 (def sampleData
@@ -34,7 +34,7 @@
    {:jasenseq 12136, :sukunimi "Aesir", :etunimi "Odin", :posti_pos_numero "02631"
     :tanimi "Asgard Instruments Analytical Oy", :sukupuoli "1", :aidinkieli "1", :titteli nil
     :edustus "ta", :lahiosoite "Valhalla", :puhelin "(09) 22 944", :sahkoposti "odin@asgard.valhalla"}
-    
+
  })
 
 
@@ -83,13 +83,6 @@
   (with-targetdb
     (tyhjenna! (reverse taulut))
     (konvertoi-e2e! println "20073107" tauluargs konvertoi!)))
-
-
-(deftest kantakayttaja-on-oikein!
-  (testing "testataan että kantatriggeri toimii ja riveille tulee oikea luontikäyttäjä"
-           (konversio-koulutusalat-e2e!)
-           (is (= {:luotu_kayttaja "KONVERSIO"}
-                  (first (with-targetdb (execquery "select distinct luotu_kayttaja from koulutusala" identity)))))))
 
 (deftest assert-datarakenteet
   (testing "varmistetaan että datarakenteet ovat loogisesti konsistentteja"
