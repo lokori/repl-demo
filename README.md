@@ -10,7 +10,7 @@ Demonstraation pointti on nimenomaan työprosessi, joten tässä koodirepository
 
 ## Demokoodin tausta
 
-Koodi perustuu [https://github.com/Opetushallitus/aitu](Opetushallituksen Aitu-projektin) todelliseen konversioon. Esimerkkiä on muokattu siten että alkuperäisen
+Koodi perustuu [Opetushallituksen Aitu-projektin](https://github.com/Opetushallitus/aitu) todelliseen konversioon. Esimerkkiä on muokattu siten että alkuperäisen
 Oracle-tietokannan sijaan käytetään PostgreSQL-kantaa myös lähdejärjestelmän tietokantana. Dataa ja kannan rakennetta on myös
 yksinkertaistettu huomattavasti. 
 
