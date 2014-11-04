@@ -72,3 +72,9 @@ Tästä se lähtee..
 ```
 (with-inputdb (execquery "select * from jarjesto" println))
 ```
+
+
+# Lisenssit
+
+* Eclipse Public License - v 1.0
+* Osa koodeista Opetushallituksen omistuksessa ja EU Public Licensen alla. Tämä lukee erikseen näissä kooditiedostoissa.
