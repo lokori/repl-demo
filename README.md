@@ -1,9 +1,9 @@
 # REPL-demo
 
-Live-koodaus demonstraation pohja [http://www.it2014.fi/index.html](Korkeakoulujen IT-päivät 2014) tapahtuman esitystä varten.
+Live-koodaus demonstraation pohja [Korkeakoulujen IT-päivät 2014](http://www.it2014.fi/index.html) tapahtuman esitystä varten.
 
-Ideana on antaa esimerkki todellisesta tilanteesta, jossa [http://clojure.org/](Clojuren) REPL, funktionaalinen ohjelmointi ja dynaaminen tyypitys mahdollistavat 
-tehokkaan työnkulun tavalla joka ei ole normaalia tai mahdollista perinteisissä ohjelmointiympäristöissä. Smalltalkin [http://www.squeak.org/](Squeak) on ehkä
+Ideana on antaa esimerkki todellisesta tilanteesta, jossa [Clojuren](http://clojure.org/) REPL, funktionaalinen ohjelmointi ja dynaaminen tyypitys mahdollistavat 
+tehokkaan työnkulun tavalla joka ei ole normaalia tai mahdollista perinteisissä ohjelmointiympäristöissä. Smalltalkin [Squeak](http://www.squeak.org/) on ehkä
 lähin vastine olio-ohjelmoinnin maailmassa, mutta Smalltalk ei ole (enää) laajasti käytössä.
 
 Demonstraation pointti on nimenomaan työprosessi, joten tässä koodirepositoryssa ei kannata kiinnittää huomiota koodin laatuun ja sisältöön.
