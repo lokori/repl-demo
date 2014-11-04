@@ -36,7 +36,7 @@ tutkimiseen.
 ## Virtuaalikoneen käyttö
 
 Koodi haluaa käyttää paikallista tietokantaa jota voidaan ajaa virtuaalikoneessa. Virtuaalikoneen pystyttäminen onnistuu ilmaisen
-[Vagrant](http://www.vagrantup.com/) ohjelman avulla. Virtuaalikoneen ajamisesta huolehtii [https://www.virtualbox.org/](Oracle Virtualbox).
+[Vagrant](http://www.vagrantup.com/) ohjelman avulla. Virtuaalikoneen ajamisesta huolehtii [Oracle Virtualbox](https://www.virtualbox.org/).
 
 # Virtuaalikoneen käynnistys
 
